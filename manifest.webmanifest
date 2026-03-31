@@ -1,0 +1,19 @@
+{
+  "name": "Atlas Academy",
+  "short_name": "Atlas",
+  "description": "Adaptive geography learning game with study mode, quiz mode, stats, and offline-ready local progress.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#17324a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "china",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "name": "China",
+    "flag": "🇨🇳",
+    "capital": "Beijing",
+    "largest_city": "Shanghai",
+    "population_millions": 1411.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/china.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "People's Republic of China",
+      "CN",
+      "Zhōngguó",
+      "Zhongguo",
+      "Zhonghua",
+      "中华人民共和国",
+      "Zhōnghuá Rénmín Gònghéguó"
+    ]
+  },
+  {
+    "id": "india",
+    "iso2": "IN",
+    "iso3": "IND",
+    "name": "India",
+    "flag": "🇮🇳",
+    "capital": "New Delhi",
+    "largest_city": "Mumbai",
+    "population_millions": 1352.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/india.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of India",
+      "IN",
+      "Bhārat",
+      "Bharat Ganrajya",
+      "இந்தியா"
+    ]
+  },
+  {
+    "id": "united_states",
+    "iso2": "US",
+    "iso3": "USA",
+    "name": "United States",
+    "flag": "🇺🇸",
+    "capital": "Washington D.C.",
+    "largest_city": "New York City",
+    "population_millions": 327.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/united_states.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "United States of America",
+      "US",
+      "USA"
+    ]
+  },
+  {
+    "id": "indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "flag": "🇮🇩",
+    "capital": "Jakarta",
+    "largest_city": "Jakarta",
+    "population_millions": 267.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/indonesia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Indonesia",
+      "ID",
+      "Republik Indonesia"
+    ]
+  },
+  {
+    "id": "pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "name": "Pakistan",
+    "flag": "🇵🇰",
+    "capital": "Islamabad",
+    "largest_city": "Karachi",
+    "population_millions": 212.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/pakistan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Islamic Republic of Pakistan",
+      "PK",
+      "Pākistān",
+      "Islāmī Jumhūriya'eh Pākistān"
+    ]
+  },
+  {
+    "id": "brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "name": "Brazil",
+    "flag": "🇧🇷",
+    "capital": "Brasília",
+    "largest_city": "Sao Paulo",
+    "population_millions": 209.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/brazil.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Federative Republic of Brazil",
+      "BR",
+      "Brasil",
+      "República Federativa do Brasil"
+    ]
+  },
+  {
+    "id": "nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "flag": "🇳🇬",
+    "capital": "Abuja",
+    "largest_city": "Lagos",
+    "population_millions": 195.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/nigeria.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Federal Republic of Nigeria",
+      "NG",
+      "Nijeriya",
+      "Naíjíríà"
+    ]
+  },
+  {
+    "id": "bangladesh",
+    "iso2": "BD",
+    "iso3": "BGD",
+    "name": "Bangladesh",
+    "flag": "🇧🇩",
+    "capital": "Dhaka",
+    "largest_city": "Dhaka",
+    "population_millions": 161.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bangladesh.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "People's Republic of Bangladesh",
+      "BD",
+      "Gônôprôjatôntri Bangladesh"
+    ]
+  },
+  {
+    "id": "russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "name": "Russia",
+    "flag": "🇷🇺",
+    "capital": "Moscow",
+    "largest_city": "Moscow",
+    "population_millions": 144.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/russia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Russian Federation",
+      "RU",
+      "Российская Федерация"
+    ]
+  },
+  {
+    "id": "japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "capital": "Tokyo",
+    "largest_city": "Tokyo",
+    "population_millions": 126.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/japan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "JP",
+      "Nippon",
+      "Nihon"
+    ]
+  },
+  {
+    "id": "mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "name": "Mexico",
+    "flag": "🇲🇽",
+    "capital": "Mexico City",
+    "largest_city": "Mexico City",
+    "population_millions": 126.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/mexico.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "United Mexican States",
+      "MX",
+      "Mexicanos",
+      "Estados Unidos Mexicanos"
+    ]
+  },
+  {
+    "id": "ethiopia",
+    "iso2": "ET",
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "flag": "🇪🇹",
+    "capital": "Addis Ababa",
+    "largest_city": "Addis Ababa",
+    "population_millions": 109.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/ethiopia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Federal Democratic Republic of Ethiopia",
+      "ET",
+      "ʾĪtyōṗṗyā",
+      "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ"
+    ]
+  },
+  {
+    "id": "philippines",
+    "iso2": "PH",
+    "iso3": "PHL",
+    "name": "Philippines",
+    "flag": "🇵🇭",
+    "capital": "Manila",
+    "largest_city": "Manila",
+    "population_millions": 106.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/philippines.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of the Philippines",
+      "PH",
+      "Repúblika ng Pilipinas"
+    ]
+  },
+  {
+    "id": "egypt",
+    "iso2": "EG",
+    "iso3": "EGY",
+    "name": "Egypt",
+    "flag": "🇪🇬",
+    "capital": "Cairo",
+    "largest_city": "Cairo",
+    "population_millions": 98.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/egypt.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Arab Republic of Egypt",
+      "EG"
+    ]
+  },
+  {
+    "id": "vietnam",
+    "iso2": "VN",
+    "iso3": "VNM",
+    "name": "Vietnam",
+    "flag": "🇻🇳",
+    "capital": "Hanoi",
+    "largest_city": "Ho Chi Minh City",
+    "population_millions": 95.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/vietnam.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Socialist Republic of Vietnam",
+      "VN",
+      "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+      "Viet Nam"
+    ]
+  },
+  {
+    "id": "dr_congo",
+    "iso2": "CD",
+    "iso3": "COD",
+    "name": "DR Congo",
+    "flag": "🇨🇩",
+    "capital": "Kinshasa",
+    "largest_city": "Kinshasa",
+    "population_millions": 84.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/dr_congo.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Democratic Republic of the Congo",
+      "CD",
+      "Congo-Kinshasa",
+      "Congo, the Democratic Republic of the",
+      "Democratic Republic of Congo",
+      "DRC"
+    ]
+  },
+  {
+    "id": "germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "capital": "Berlin",
+    "largest_city": "Berlin",
+    "population_millions": 82.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/germany.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Federal Republic of Germany",
+      "DE",
+      "Bundesrepublik Deutschland"
+    ]
+  },
+  {
+    "id": "turkiye",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "name": "Türkiye",
+    "flag": "🇹🇷",
+    "capital": "Ankara",
+    "largest_city": "Istanbul",
+    "population_millions": 82.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/turkiye.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Turkey",
+      "Republic of Türkiye",
+      "TR",
+      "Turkiye",
+      "Republic of Turkey",
+      "Türkiye Cumhuriyeti"
+    ]
+  },
+  {
+    "id": "iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "name": "Iran",
+    "flag": "🇮🇷",
+    "capital": "Tehran",
+    "largest_city": "Tehran",
+    "population_millions": 81.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/iran.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Islamic Republic of Iran",
+      "IR",
+      "Iran, Islamic Republic of",
+      "Jomhuri-ye Eslāmi-ye Irān"
+    ]
+  },
+  {
+    "id": "thailand",
+    "iso2": "TH",
+    "iso3": "THA",
+    "name": "Thailand",
+    "flag": "🇹🇭",
+    "capital": "Bangkok",
+    "largest_city": "Bangkok",
+    "population_millions": 69.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/thailand.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Kingdom of Thailand",
+      "TH",
+      "Prathet",
+      "Thai",
+      "ราชอาณาจักรไทย",
+      "Ratcha Anachak Thai"
+    ]
+  },
+  {
+    "id": "france",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "name": "France",
+    "flag": "🇫🇷",
+    "capital": "Paris",
+    "largest_city": "Paris",
+    "population_millions": 67,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/france.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "French Republic",
+      "FR",
+      "République française"
+    ]
+  },
+  {
+    "id": "united_kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "flag": "🇬🇧",
+    "capital": "London",
+    "largest_city": "London",
+    "population_millions": 66.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/united_kingdom.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "United Kingdom of Great Britain and Northern Ireland",
+      "GB",
+      "UK",
+      "Great Britain"
+    ]
+  },
+  {
+    "id": "italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "capital": "Rome",
+    "largest_city": "Rome",
+    "population_millions": 60.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/italy.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Italian Republic",
+      "IT",
+      "Repubblica italiana"
+    ]
+  },
+  {
+    "id": "south_africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "name": "South Africa",
+    "flag": "🇿🇦",
+    "capital": "Pretoria",
+    "largest_city": "Johannesburg",
+    "population_millions": 57.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/south_africa.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of South Africa",
+      "ZA",
+      "RSA",
+      "Suid-Afrika"
+    ]
+  },
+  {
+    "id": "tanzania",
+    "iso2": "TZ",
+    "iso3": "TZA",
+    "name": "Tanzania",
+    "flag": "🇹🇿",
+    "capital": "Dodoma",
+    "largest_city": "Dar es Salaam",
+    "population_millions": 56.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/tanzania.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "United Republic of Tanzania",
+      "TZ",
+      "Tanzania, United Republic of",
+      "Jamhuri ya Muungano wa Tanzania"
+    ]
+  },
+  {
+    "id": "myanmar",
+    "iso2": "MM",
+    "iso3": "MMR",
+    "name": "Myanmar",
+    "flag": "🇲🇲",
+    "capital": "Naypyidaw",
+    "largest_city": "Yangon",
+    "population_millions": 53.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/myanmar.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of the Union of Myanmar",
+      "MM",
+      "Burma",
+      "Pyidaunzu Thanmăda Myăma Nainngandaw"
+    ]
+  },
+  {
+    "id": "south_korea",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "name": "South Korea",
+    "flag": "🇰🇷",
+    "capital": "Seoul",
+    "largest_city": "Seoul",
+    "population_millions": 51.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/south_korea.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Korea",
+      "KR",
+      "Korea, Republic of",
+      "남한",
+      "남조선"
+    ]
+  },
+  {
+    "id": "kenya",
+    "iso2": "KE",
+    "iso3": "KEN",
+    "name": "Kenya",
+    "flag": "🇰🇪",
+    "capital": "Nairobi",
+    "largest_city": "Nairobi",
+    "population_millions": 51.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/kenya.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Kenya",
+      "KE",
+      "Jamhuri ya Kenya"
+    ]
+  },
+  {
+    "id": "colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "name": "Colombia",
+    "flag": "🇨🇴",
+    "capital": "Bogotá",
+    "largest_city": "Bogota",
+    "population_millions": 49.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/colombia.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Republic of Colombia",
+      "CO",
+      "República de Colombia"
+    ]
+  },
+  {
+    "id": "spain",
+    "iso2": "ES",
+    "iso3": "ESP",
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "capital": "Madrid",
+    "largest_city": "Madrid",
+    "population_millions": 46.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/spain.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Kingdom of Spain",
+      "ES",
+      "Reino de España"
+    ]
+  },
+  {
+    "id": "ukraine",
+    "iso2": "UA",
+    "iso3": "UKR",
+    "name": "Ukraine",
+    "flag": "🇺🇦",
+    "capital": "Kyiv",
+    "largest_city": "Kyiv",
+    "population_millions": 44.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/ukraine.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "UA",
+      "Ukrayina"
+    ]
+  },
+  {
+    "id": "argentina",
+    "iso2": "AR",
+    "iso3": "ARG",
+    "name": "Argentina",
+    "flag": "🇦🇷",
+    "capital": "Buenos Aires",
+    "largest_city": "Buenos Aires",
+    "population_millions": 44.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/argentina.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Argentine Republic",
+      "AR",
+      "República Argentina"
+    ]
+  },
+  {
+    "id": "uganda",
+    "iso2": "UG",
+    "iso3": "UGA",
+    "name": "Uganda",
+    "flag": "🇺🇬",
+    "capital": "Kampala",
+    "largest_city": "Kampala",
+    "population_millions": 42.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/uganda.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Uganda",
+      "UG",
+      "Jamhuri ya Uganda"
+    ]
+  },
+  {
+    "id": "algeria",
+    "iso2": "DZ",
+    "iso3": "DZA",
+    "name": "Algeria",
+    "flag": "🇩🇿",
+    "capital": "Algiers",
+    "largest_city": "Algiers",
+    "population_millions": 42.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/algeria.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "People's Democratic Republic of Algeria",
+      "DZ",
+      "Dzayer",
+      "Algérie"
+    ]
+  },
+  {
+    "id": "sudan",
+    "iso2": "SD",
+    "iso3": "SDN",
+    "name": "Sudan",
+    "flag": "🇸🇩",
+    "capital": "Khartoum",
+    "largest_city": "Khartoum",
+    "population_millions": 41.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/sudan.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of the Sudan",
+      "SD",
+      "Jumhūrīyat as-Sūdān"
+    ]
+  },
+  {
+    "id": "iraq",
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "name": "Iraq",
+    "flag": "🇮🇶",
+    "capital": "Baghdad",
+    "largest_city": "Baghdad",
+    "population_millions": 38.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/iraq.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Iraq",
+      "IQ",
+      "Jumhūriyyat al-‘Irāq"
+    ]
+  },
+  {
+    "id": "poland",
+    "iso2": "PL",
+    "iso3": "POL",
+    "name": "Poland",
+    "flag": "🇵🇱",
+    "capital": "Warsaw",
+    "largest_city": "Warsaw",
+    "population_millions": 38,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/poland.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Poland",
+      "PL",
+      "Rzeczpospolita Polska"
+    ]
+  },
+  {
+    "id": "afghanistan",
+    "iso2": "AF",
+    "iso3": "AFG",
+    "name": "Afghanistan",
+    "flag": "🇦🇫",
+    "capital": "Kabul",
+    "largest_city": "Kabul",
+    "population_millions": 37.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/afghanistan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Islamic Republic of Afghanistan",
+      "AF",
+      "Afġānistān"
+    ]
+  },
+  {
+    "id": "canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "name": "Canada",
+    "flag": "🇨🇦",
+    "capital": "Ottawa",
+    "largest_city": "Toronto",
+    "population_millions": 37.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/canada.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "CA"
+    ]
+  },
+  {
+    "id": "morocco",
+    "iso2": "MA",
+    "iso3": "MAR",
+    "name": "Morocco",
+    "flag": "🇲🇦",
+    "capital": "Rabat",
+    "largest_city": "Casablanca",
+    "population_millions": 36,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/morocco.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Kingdom of Morocco",
+      "MA",
+      "Al-Mamlakah al-Maġribiyah"
+    ]
+  },
+  {
+    "id": "saudi_arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "name": "Saudi Arabia",
+    "flag": "🇸🇦",
+    "capital": "Riyadh",
+    "largest_city": "Riyadh",
+    "population_millions": 33.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/saudi_arabia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Kingdom of Saudi Arabia",
+      "Saudi",
+      "SA",
+      "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
+    ]
+  },
+  {
+    "id": "uzbekistan",
+    "iso2": "UZ",
+    "iso3": "UZB",
+    "name": "Uzbekistan",
+    "flag": "🇺🇿",
+    "capital": "Tashkent",
+    "largest_city": "Tashkent",
+    "population_millions": 33,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/uzbekistan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Uzbekistan",
+      "UZ",
+      "O‘zbekiston Respublikasi",
+      "Ўзбекистон Республикаси"
+    ]
+  },
+  {
+    "id": "peru",
+    "iso2": "PE",
+    "iso3": "PER",
+    "name": "Peru",
+    "flag": "🇵🇪",
+    "capital": "Lima",
+    "largest_city": "Lima",
+    "population_millions": 32,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/peru.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Republic of Peru",
+      "PE",
+      "República del Perú"
+    ]
+  },
+  {
+    "id": "malaysia",
+    "iso2": "MY",
+    "iso3": "MYS",
+    "name": "Malaysia",
+    "flag": "🇲🇾",
+    "capital": "Kuala Lumpur",
+    "largest_city": "Kuala Lumpur",
+    "population_millions": 31.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/malaysia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "MY"
+    ]
+  },
+  {
+    "id": "angola",
+    "iso2": "AO",
+    "iso3": "AGO",
+    "name": "Angola",
+    "flag": "🇦🇴",
+    "capital": "Luanda",
+    "largest_city": "Luanda",
+    "population_millions": 30.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/angola.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Angola",
+      "AO",
+      "República de Angola",
+      "ʁɛpublika de an'ɡɔla"
+    ]
+  },
+  {
+    "id": "ghana",
+    "iso2": "GH",
+    "iso3": "GHA",
+    "name": "Ghana",
+    "flag": "🇬🇭",
+    "capital": "Accra",
+    "largest_city": "Accra",
+    "population_millions": 29.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/ghana.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Ghana",
+      "GH"
+    ]
+  },
+  {
+    "id": "mozambique",
+    "iso2": "MZ",
+    "iso3": "MOZ",
+    "name": "Mozambique",
+    "flag": "🇲🇿",
+    "capital": "Maputo",
+    "largest_city": "Maputo",
+    "population_millions": 29.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/mozambique.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Mozambique",
+      "MZ",
+      "República de Moçambique"
+    ]
+  },
+  {
+    "id": "venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "name": "Venezuela",
+    "flag": "🇻🇪",
+    "capital": "Caracas",
+    "largest_city": "Caracas",
+    "population_millions": 28.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/venezuela.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Bolivarian Republic of Venezuela",
+      "VE",
+      "Venezuela, Bolivarian Republic of",
+      "República Bolivariana de Venezuela"
+    ]
+  },
+  {
+    "id": "yemen",
+    "iso2": "YE",
+    "iso3": "YEM",
+    "name": "Yemen",
+    "flag": "🇾🇪",
+    "capital": "Sana'a",
+    "largest_city": "Sana'a",
+    "population_millions": 28.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/yemen.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Yemen",
+      "YE",
+      "Yemeni Republic",
+      "al-Jumhūriyyah al-Yamaniyyah"
+    ]
+  },
+  {
+    "id": "nepal",
+    "iso2": "NP",
+    "iso3": "NPL",
+    "name": "Nepal",
+    "flag": "🇳🇵",
+    "capital": "Kathmandu",
+    "largest_city": "Kathmandu",
+    "population_millions": 28.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/nepal.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Federal Democratic Republic of Nepal",
+      "NP",
+      "Loktāntrik Ganatantra Nepāl"
+    ]
+  },
+  {
+    "id": "madagascar",
+    "iso2": "MG",
+    "iso3": "MDG",
+    "name": "Madagascar",
+    "flag": "🇲🇬",
+    "capital": "Antananarivo",
+    "largest_city": "Antananarivo",
+    "population_millions": 26.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/madagascar.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Madagascar",
+      "MG",
+      "Repoblikan'i Madagasikara",
+      "République de Madagascar"
+    ]
+  },
+  {
+    "id": "north_korea",
+    "iso2": "KP",
+    "iso3": "PRK",
+    "name": "North Korea",
+    "flag": "🇰🇵",
+    "capital": "Pyongyang",
+    "largest_city": "Pyongyang",
+    "population_millions": 25.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/north_korea.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Democratic People's Republic of Korea",
+      "KP",
+      "DPRK",
+      "조선민주주의인민공화국",
+      "Chosŏn Minjujuŭi Inmin Konghwaguk",
+      "Korea, Democratic People's Republic of",
+      "북한",
+      "북조선"
+    ]
+  },
+  {
+    "id": "cameroon",
+    "iso2": "CM",
+    "iso3": "CMR",
+    "name": "Cameroon",
+    "flag": "🇨🇲",
+    "capital": "Yaoundé",
+    "largest_city": "Douala",
+    "population_millions": 25.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/cameroon.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Cameroon",
+      "CM",
+      "République du Cameroun"
+    ]
+  },
+  {
+    "id": "ivory_coast",
+    "iso2": "CI",
+    "iso3": "CIV",
+    "name": "Ivory Coast",
+    "flag": "🇨🇮",
+    "capital": "Yamoussoukro",
+    "largest_city": "Abidjan",
+    "population_millions": 25.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/ivory_coast.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Côte d'Ivoire",
+      "CI",
+      "Côte d'Ivoire",
+      "Cote d'Ivoire",
+      "République de Côte d'Ivoire"
+    ]
+  },
+  {
+    "id": "australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "name": "Australia",
+    "flag": "🇦🇺",
+    "capital": "Canberra",
+    "largest_city": "Sydney",
+    "population_millions": 25,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/australia.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Commonwealth of Australia",
+      "AU"
+    ]
+  },
+  {
+    "id": "taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "name": "Taiwan",
+    "flag": "🇹🇼",
+    "capital": "Taipei",
+    "largest_city": "Taipei",
+    "population_millions": 23.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/taiwan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of China (Taiwan)",
+      "TW",
+      "Táiwān",
+      "Republic of China",
+      "中華民國",
+      "Zhōnghuá Mínguó",
+      "Chinese Taipei"
+    ]
+  },
+  {
+    "id": "niger",
+    "iso2": "NE",
+    "iso3": "NER",
+    "name": "Niger",
+    "flag": "🇳🇪",
+    "capital": "Niamey",
+    "largest_city": "Niamey",
+    "population_millions": 22.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/niger.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Niger",
+      "NE",
+      "Nijar"
+    ]
+  },
+  {
+    "id": "sri_lanka",
+    "iso2": "LK",
+    "iso3": "LKA",
+    "name": "Sri Lanka",
+    "flag": "🇱🇰",
+    "capital": "Colombo",
+    "largest_city": "Colombo",
+    "population_millions": 21.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/sri_lanka.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Democratic Socialist Republic of Sri Lanka",
+      "LK",
+      "ilaṅkai"
+    ]
+  },
+  {
+    "id": "burkina_faso",
+    "iso2": "BF",
+    "iso3": "BFA",
+    "name": "Burkina Faso",
+    "flag": "🇧🇫",
+    "capital": "Ouagadougou",
+    "largest_city": "Ouagadougou",
+    "population_millions": 19.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/burkina_faso.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "BF"
+    ]
+  },
+  {
+    "id": "romania",
+    "iso2": "RO",
+    "iso3": "ROU",
+    "name": "Romania",
+    "flag": "🇷🇴",
+    "capital": "Bucharest",
+    "largest_city": "Bucharest",
+    "population_millions": 19.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/romania.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "RO",
+      "Rumania",
+      "Roumania",
+      "România"
+    ]
+  },
+  {
+    "id": "mali",
+    "iso2": "ML",
+    "iso3": "MLI",
+    "name": "Mali",
+    "flag": "🇲🇱",
+    "capital": "Bamako",
+    "largest_city": "Bamako",
+    "population_millions": 19.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/mali.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Mali",
+      "ML",
+      "République du Mali"
+    ]
+  },
+  {
+    "id": "chile",
+    "iso2": "CL",
+    "iso3": "CHL",
+    "name": "Chile",
+    "flag": "🇨🇱",
+    "capital": "Santiago",
+    "largest_city": "Santiago",
+    "population_millions": 18.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/chile.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Republic of Chile",
+      "CL",
+      "República de Chile"
+    ]
+  },
+  {
+    "id": "kazakhstan",
+    "iso2": "KZ",
+    "iso3": "KAZ",
+    "name": "Kazakhstan",
+    "flag": "🇰🇿",
+    "capital": "Astana",
+    "largest_city": "Almaty",
+    "population_millions": 18.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/kazakhstan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Kazakhstan",
+      "KZ",
+      "Qazaqstan",
+      "Казахстан",
+      "Қазақстан Республикасы",
+      "Qazaqstan Respublïkası",
+      "Республика Казахстан",
+      "Respublika Kazakhstan"
+    ]
+  },
+  {
+    "id": "malawi",
+    "iso2": "MW",
+    "iso3": "MWI",
+    "name": "Malawi",
+    "flag": "🇲🇼",
+    "capital": "Lilongwe",
+    "largest_city": "Lilongwe",
+    "population_millions": 17.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/malawi.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Malawi",
+      "MW"
+    ]
+  },
+  {
+    "id": "zambia",
+    "iso2": "ZM",
+    "iso3": "ZMB",
+    "name": "Zambia",
+    "flag": "🇿🇲",
+    "capital": "Lusaka",
+    "largest_city": "Lusaka",
+    "population_millions": 17.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/zambia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Zambia",
+      "ZM"
+    ]
+  },
+  {
+    "id": "guatemala",
+    "iso2": "GT",
+    "iso3": "GTM",
+    "name": "Guatemala",
+    "flag": "🇬🇹",
+    "capital": "Guatemala City",
+    "largest_city": "Guatemala City",
+    "population_millions": 17.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/guatemala.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Guatemala",
+      "GT"
+    ]
+  },
+  {
+    "id": "netherlands",
+    "iso2": "NL",
+    "iso3": "NLD",
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "capital": "Amsterdam",
+    "largest_city": "Amsterdam",
+    "population_millions": 17.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/netherlands.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "The Netherlands",
+      "Kingdom of the Netherlands",
+      "NL",
+      "Holland",
+      "Nederland"
+    ]
+  },
+  {
+    "id": "ecuador",
+    "iso2": "EC",
+    "iso3": "ECU",
+    "name": "Ecuador",
+    "flag": "🇪🇨",
+    "capital": "Quito",
+    "largest_city": "Guayaquil",
+    "population_millions": 17.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/ecuador.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Republic of Ecuador",
+      "EC",
+      "República del Ecuador"
+    ]
+  },
+  {
+    "id": "syria",
+    "iso2": "SY",
+    "iso3": "SYR",
+    "name": "Syria",
+    "flag": "🇸🇾",
+    "capital": "Damascus",
+    "largest_city": "Aleppo",
+    "population_millions": 16.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/syria.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Syrian Arab Republic",
+      "SY",
+      "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
+    ]
+  },
+  {
+    "id": "zimbabwe",
+    "iso2": "ZW",
+    "iso3": "ZWE",
+    "name": "Zimbabwe",
+    "flag": "🇿🇼",
+    "capital": "Harare",
+    "largest_city": "Harare",
+    "population_millions": 16.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/zimbabwe.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Zimbabwe",
+      "ZW"
+    ]
+  },
+  {
+    "id": "cambodia",
+    "iso2": "KH",
+    "iso3": "KHM",
+    "name": "Cambodia",
+    "flag": "🇰🇭",
+    "capital": "Phnom Penh",
+    "largest_city": "Phnom Penh",
+    "population_millions": 16.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/cambodia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Kingdom of Cambodia",
+      "KH"
+    ]
+  },
+  {
+    "id": "senegal",
+    "iso2": "SN",
+    "iso3": "SEN",
+    "name": "Senegal",
+    "flag": "🇸🇳",
+    "capital": "Dakar",
+    "largest_city": "Dakar",
+    "population_millions": 15.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/senegal.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Senegal",
+      "SN",
+      "République du Sénégal"
+    ]
+  },
+  {
+    "id": "chad",
+    "iso2": "TD",
+    "iso3": "TCD",
+    "name": "Chad",
+    "flag": "🇹🇩",
+    "capital": "N'Djamena",
+    "largest_city": "N'Djamena",
+    "population_millions": 15.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/chad.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Chad",
+      "TD",
+      "Tchad",
+      "République du Tchad"
+    ]
+  },
+  {
+    "id": "somalia",
+    "iso2": "SO",
+    "iso3": "SOM",
+    "name": "Somalia",
+    "flag": "🇸🇴",
+    "capital": "Mogadishu",
+    "largest_city": "Mogadishu",
+    "population_millions": 15,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/somalia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Federal Republic of Somalia",
+      "SO",
+      "aṣ-Ṣūmāl",
+      "Jamhuuriyadda Federaalka Soomaaliya",
+      "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya"
+    ]
+  },
+  {
+    "id": "guinea",
+    "iso2": "GN",
+    "iso3": "GIN",
+    "name": "Guinea",
+    "flag": "🇬🇳",
+    "capital": "Conakry",
+    "largest_city": "Conakry",
+    "population_millions": 12.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/guinea.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Guinea",
+      "GN",
+      "République de Guinée"
+    ]
+  },
+  {
+    "id": "rwanda",
+    "iso2": "RW",
+    "iso3": "RWA",
+    "name": "Rwanda",
+    "flag": "🇷🇼",
+    "capital": "Kigali",
+    "largest_city": "Kigali",
+    "population_millions": 12.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/rwanda.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Rwanda",
+      "RW",
+      "Repubulika y'u Rwanda",
+      "République du Rwanda"
+    ]
+  },
+  {
+    "id": "tunisia",
+    "iso2": "TN",
+    "iso3": "TUN",
+    "name": "Tunisia",
+    "flag": "🇹🇳",
+    "capital": "Tunis",
+    "largest_city": "Tunis",
+    "population_millions": 11.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/tunisia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Tunisian Republic",
+      "TN",
+      "Republic of Tunisia",
+      "al-Jumhūriyyah at-Tūnisiyyah"
+    ]
+  },
+  {
+    "id": "benin",
+    "iso2": "BJ",
+    "iso3": "BEN",
+    "name": "Benin",
+    "flag": "🇧🇯",
+    "capital": "Porto-Novo",
+    "largest_city": "Cotonou",
+    "population_millions": 11.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/benin.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Benin",
+      "BJ",
+      "République du Bénin"
+    ]
+  },
+  {
+    "id": "belgium",
+    "iso2": "BE",
+    "iso3": "BEL",
+    "name": "Belgium",
+    "flag": "🇧🇪",
+    "capital": "Brussels",
+    "largest_city": "Brussels",
+    "population_millions": 11.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/belgium.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Kingdom of Belgium",
+      "BE",
+      "België",
+      "Belgie",
+      "Belgien",
+      "Belgique",
+      "Koninkrijk België",
+      "Royaume de Belgique",
+      "Königreich Belgien"
+    ]
+  },
+  {
+    "id": "bolivia",
+    "iso2": "BO",
+    "iso3": "BOL",
+    "name": "Bolivia",
+    "flag": "🇧🇴",
+    "capital": "Sucre",
+    "largest_city": "Santa Cruz de la Sierra",
+    "population_millions": 11.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bolivia.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Plurinational State of Bolivia",
+      "BO",
+      "Buliwya",
+      "Wuliwya",
+      "Bolivia, Plurinational State of",
+      "Estado Plurinacional de Bolivia",
+      "Buliwya Mamallaqta",
+      "Wuliwya Suyu",
+      "Tetã Volívia"
+    ]
+  },
+  {
+    "id": "cuba",
+    "iso2": "CU",
+    "iso3": "CUB",
+    "name": "Cuba",
+    "flag": "🇨🇺",
+    "capital": "Havana",
+    "largest_city": "Havana",
+    "population_millions": 11.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/cuba.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Cuba",
+      "CU",
+      "República de Cuba"
+    ]
+  },
+  {
+    "id": "burundi",
+    "iso2": "BI",
+    "iso3": "BDI",
+    "name": "Burundi",
+    "flag": "🇧🇮",
+    "capital": "Gitega",
+    "largest_city": "Bujumbura",
+    "population_millions": 11.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/burundi.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Burundi",
+      "BI",
+      "Republika y'Uburundi",
+      "République du Burundi"
+    ]
+  },
+  {
+    "id": "haiti",
+    "iso2": "HT",
+    "iso3": "HTI",
+    "name": "Haiti",
+    "flag": "🇭🇹",
+    "capital": "Port-au-Prince",
+    "largest_city": "Port-au-Prince",
+    "population_millions": 11.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/haiti.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Haiti",
+      "HT",
+      "République d'Haïti",
+      "Repiblik Ayiti"
+    ]
+  },
+  {
+    "id": "greece",
+    "iso2": "GR",
+    "iso3": "GRC",
+    "name": "Greece",
+    "flag": "🇬🇷",
+    "capital": "Athens",
+    "largest_city": "Athens",
+    "population_millions": 10.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/greece.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Hellenic Republic",
+      "GR",
+      "Elláda",
+      "Ελληνική Δημοκρατία"
+    ]
+  },
+  {
+    "id": "czechia",
+    "iso2": "CZ",
+    "iso3": "CZE",
+    "name": "Czechia",
+    "flag": "🇨🇿",
+    "capital": "Prague",
+    "largest_city": "Prague",
+    "population_millions": 10.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/czechia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Czech Republic",
+      "CZ",
+      "Česká republika",
+      "Česko"
+    ]
+  },
+  {
+    "id": "dominican_republic",
+    "iso2": "DO",
+    "iso3": "DOM",
+    "name": "Dominican Republic",
+    "flag": "🇩🇴",
+    "capital": "Santo Domingo",
+    "largest_city": "Santo Domingo",
+    "population_millions": 10.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/dominican_republic.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "DO"
+    ]
+  },
+  {
+    "id": "portugal",
+    "iso2": "PT",
+    "iso3": "PRT",
+    "name": "Portugal",
+    "flag": "🇵🇹",
+    "capital": "Lisbon",
+    "largest_city": "Lisbon",
+    "population_millions": 10.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/portugal.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Portuguese Republic",
+      "PT",
+      "Portuguesa",
+      "República Portuguesa"
+    ]
+  },
+  {
+    "id": "azerbaijan",
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "flag": "🇦🇿",
+    "capital": "Baku",
+    "largest_city": "Baku",
+    "population_millions": 10.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/azerbaijan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Azerbaijan",
+      "AZ",
+      "Azərbaycan Respublikası"
+    ]
+  },
+  {
+    "id": "sweden",
+    "iso2": "SE",
+    "iso3": "SWE",
+    "name": "Sweden",
+    "flag": "🇸🇪",
+    "capital": "Stockholm",
+    "largest_city": "Stockholm",
+    "population_millions": 10.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/sweden.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Kingdom of Sweden",
+      "SE",
+      "Konungariket Sverige"
+    ]
+  },
+  {
+    "id": "jordan",
+    "iso2": "JO",
+    "iso3": "JOR",
+    "name": "Jordan",
+    "flag": "🇯🇴",
+    "capital": "Amman",
+    "largest_city": "Amman",
+    "population_millions": 10,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/jordan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Hashemite Kingdom of Jordan",
+      "JO",
+      "al-Mamlakah al-Urdunīyah al-Hāshimīyah"
+    ]
+  },
+  {
+    "id": "hungary",
+    "iso2": "HU",
+    "iso3": "HUN",
+    "name": "Hungary",
+    "flag": "🇭🇺",
+    "capital": "Budapest",
+    "largest_city": "Budapest",
+    "population_millions": 9.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/hungary.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "HU"
+    ]
+  },
+  {
+    "id": "united_arab_emirates",
+    "iso2": "AE",
+    "iso3": "ARE",
+    "name": "United Arab Emirates",
+    "flag": "🇦🇪",
+    "capital": "Abu Dhabi",
+    "largest_city": "Dubai",
+    "population_millions": 9.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/united_arab_emirates.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "AE",
+      "UAE",
+      "Emirates"
+    ]
+  },
+  {
+    "id": "honduras",
+    "iso2": "HN",
+    "iso3": "HND",
+    "name": "Honduras",
+    "flag": "🇭🇳",
+    "capital": "Tegucigalpa",
+    "largest_city": "Tegucigalpa",
+    "population_millions": 9.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/honduras.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Honduras",
+      "HN",
+      "República de Honduras"
+    ]
+  },
+  {
+    "id": "belarus",
+    "iso2": "BY",
+    "iso3": "BLR",
+    "name": "Belarus",
+    "flag": "🇧🇾",
+    "capital": "Minsk",
+    "largest_city": "Minsk",
+    "population_millions": 9.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/belarus.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Belarus",
+      "BY",
+      "Bielaruś",
+      "Белоруссия",
+      "Республика Белоруссия"
+    ]
+  },
+  {
+    "id": "tajikistan",
+    "iso2": "TJ",
+    "iso3": "TJK",
+    "name": "Tajikistan",
+    "flag": "🇹🇯",
+    "capital": "Dushanbe",
+    "largest_city": "Dushanbe",
+    "population_millions": 9.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/tajikistan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Tajikistan",
+      "TJ",
+      "Toçikiston",
+      "Ҷумҳурии Тоҷикистон",
+      "Çumhuriyi Toçikiston"
+    ]
+  },
+  {
+    "id": "israel",
+    "iso2": "IL",
+    "iso3": "ISR",
+    "name": "Israel",
+    "flag": "🇮🇱",
+    "capital": "Jerusalem",
+    "largest_city": "Jerusalem",
+    "population_millions": 8.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/israel.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "State of Israel",
+      "IL",
+      "Medīnat Yisrā'el"
+    ]
+  },
+  {
+    "id": "austria",
+    "iso2": "AT",
+    "iso3": "AUT",
+    "name": "Austria",
+    "flag": "🇦🇹",
+    "capital": "Vienna",
+    "largest_city": "Vienna",
+    "population_millions": 8.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/austria.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Austria",
+      "AT",
+      "Osterreich",
+      "Oesterreich"
+    ]
+  },
+  {
+    "id": "papua_new_guinea",
+    "iso2": "PG",
+    "iso3": "PNG",
+    "name": "Papua New Guinea",
+    "flag": "🇵🇬",
+    "capital": "Port Moresby",
+    "largest_city": "Port Moresby",
+    "population_millions": 8.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/papua_new_guinea.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Independent State of Papua New Guinea",
+      "PG",
+      "Independen Stet bilong Papua Niugini"
+    ]
+  },
+  {
+    "id": "switzerland",
+    "iso2": "CH",
+    "iso3": "CHE",
+    "name": "Switzerland",
+    "flag": "🇨🇭",
+    "capital": "Bern",
+    "largest_city": "Zurich",
+    "population_millions": 8.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/switzerland.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Swiss Confederation",
+      "CH",
+      "Schweiz",
+      "Suisse",
+      "Svizzera",
+      "Svizra"
+    ]
+  },
+  {
+    "id": "south_sudan",
+    "iso2": "SS",
+    "iso3": "SSD",
+    "name": "South Sudan",
+    "flag": "🇸🇸",
+    "capital": "Juba",
+    "largest_city": "Juba",
+    "population_millions": 8.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/south_sudan.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of South Sudan",
+      "SS"
+    ]
+  },
+  {
+    "id": "togo",
+    "iso2": "TG",
+    "iso3": "TGO",
+    "name": "Togo",
+    "flag": "🇹🇬",
+    "capital": "Lomé",
+    "largest_city": "Lome",
+    "population_millions": 7.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/togo.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Togolese Republic",
+      "TG",
+      "Togolese",
+      "République Togolaise"
+    ]
+  },
+  {
+    "id": "sierra_leone",
+    "iso2": "SL",
+    "iso3": "SLE",
+    "name": "Sierra Leone",
+    "flag": "🇸🇱",
+    "capital": "Freetown",
+    "largest_city": "Freetown",
+    "population_millions": 7.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/sierra_leone.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Sierra Leone",
+      "SL"
+    ]
+  },
+  {
+    "id": "laos",
+    "iso2": "LA",
+    "iso3": "LAO",
+    "name": "Laos",
+    "flag": "🇱🇦",
+    "capital": "Vientiane",
+    "largest_city": "Vientiane",
+    "population_millions": 7.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/laos.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Lao People's Democratic Republic",
+      "LA",
+      "Lao",
+      "Sathalanalat Paxathipatai Paxaxon Lao"
+    ]
+  },
+  {
+    "id": "bulgaria",
+    "iso2": "BG",
+    "iso3": "BGR",
+    "name": "Bulgaria",
+    "flag": "🇧🇬",
+    "capital": "Sofia",
+    "largest_city": "Sofia",
+    "population_millions": 7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bulgaria.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Bulgaria",
+      "BG",
+      "Република България"
+    ]
+  },
+  {
+    "id": "paraguay",
+    "iso2": "PY",
+    "iso3": "PRY",
+    "name": "Paraguay",
+    "flag": "🇵🇾",
+    "capital": "Asunción",
+    "largest_city": "Asuncion",
+    "population_millions": 7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/paraguay.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Republic of Paraguay",
+      "PY",
+      "República del Paraguay",
+      "Tetã Paraguái"
+    ]
+  },
+  {
+    "id": "serbia",
+    "iso2": "RS",
+    "iso3": "SRB",
+    "name": "Serbia",
+    "flag": "🇷🇸",
+    "capital": "Belgrade",
+    "largest_city": "Belgrade",
+    "population_millions": 7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/serbia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Serbia",
+      "RS",
+      "Srbija",
+      "Republika Srbija",
+      "Србија",
+      "Република Србија"
+    ]
+  },
+  {
+    "id": "lebanon",
+    "iso2": "LB",
+    "iso3": "LBN",
+    "name": "Lebanon",
+    "flag": "🇱🇧",
+    "capital": "Beirut",
+    "largest_city": "Beirut",
+    "population_millions": 6.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/lebanon.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Lebanese Republic",
+      "LB",
+      "Al-Jumhūrīyah Al-Libnānīyah"
+    ]
+  },
+  {
+    "id": "libya",
+    "iso2": "LY",
+    "iso3": "LBY",
+    "name": "Libya",
+    "flag": "🇱🇾",
+    "capital": "Tripoli",
+    "largest_city": "Tripoli",
+    "population_millions": 6.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/libya.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "State of Libya",
+      "LY",
+      "Dawlat Libya"
+    ]
+  },
+  {
+    "id": "nicaragua",
+    "iso2": "NI",
+    "iso3": "NIC",
+    "name": "Nicaragua",
+    "flag": "🇳🇮",
+    "capital": "Managua",
+    "largest_city": "Managua",
+    "population_millions": 6.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/nicaragua.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Nicaragua",
+      "NI",
+      "República de Nicaragua"
+    ]
+  },
+  {
+    "id": "el_salvador",
+    "iso2": "SV",
+    "iso3": "SLV",
+    "name": "El Salvador",
+    "flag": "🇸🇻",
+    "capital": "San Salvador",
+    "largest_city": "San Salvador",
+    "population_millions": 6.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/el_salvador.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of El Salvador",
+      "SV",
+      "República de El Salvador"
+    ]
+  },
+  {
+    "id": "kyrgyzstan",
+    "iso2": "KG",
+    "iso3": "KGZ",
+    "name": "Kyrgyzstan",
+    "flag": "🇰🇬",
+    "capital": "Bishkek",
+    "largest_city": "Bishkek",
+    "population_millions": 6.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/kyrgyzstan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Kyrgyz Republic",
+      "KG",
+      "Киргизия",
+      "Кыргыз Республикасы",
+      "Kyrgyz Respublikasy"
+    ]
+  },
+  {
+    "id": "eritrea",
+    "iso2": "ER",
+    "iso3": "ERI",
+    "name": "Eritrea",
+    "flag": "🇪🇷",
+    "capital": "Asmara",
+    "largest_city": "Asmara",
+    "population_millions": 6.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/eritrea.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "State of Eritrea",
+      "ER",
+      "ሃገረ ኤርትራ",
+      "Dawlat Iritriyá",
+      "ʾErtrā",
+      "Iritriyā"
+    ]
+  },
+  {
+    "id": "turkmenistan",
+    "iso2": "TM",
+    "iso3": "TKM",
+    "name": "Turkmenistan",
+    "flag": "🇹🇲",
+    "capital": "Ashgabat",
+    "largest_city": "Ashgabat",
+    "population_millions": 5.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/turkmenistan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "TM"
+    ]
+  },
+  {
+    "id": "denmark",
+    "iso2": "DK",
+    "iso3": "DNK",
+    "name": "Denmark",
+    "flag": "🇩🇰",
+    "capital": "Copenhagen",
+    "largest_city": "Copenhagen",
+    "population_millions": 5.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/denmark.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Kingdom of Denmark",
+      "DK",
+      "Danmark",
+      "Kongeriget Danmark"
+    ]
+  },
+  {
+    "id": "singapore",
+    "iso2": "SG",
+    "iso3": "SGP",
+    "name": "Singapore",
+    "flag": "🇸🇬",
+    "capital": "Singapore",
+    "largest_city": "Singapore",
+    "population_millions": 5.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/singapore.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Singapore",
+      "SG",
+      "Singapura",
+      "Republik Singapura",
+      "新加坡共和国"
+    ]
+  },
+  {
+    "id": "finland",
+    "iso2": "FI",
+    "iso3": "FIN",
+    "name": "Finland",
+    "flag": "🇫🇮",
+    "capital": "Helsinki",
+    "largest_city": "Helsinki",
+    "population_millions": 5.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/finland.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Finland",
+      "FI",
+      "Suomi",
+      "Suomen tasavalta",
+      "Republiken Finland"
+    ]
+  },
+  {
+    "id": "slovakia",
+    "iso2": "SK",
+    "iso3": "SVK",
+    "name": "Slovakia",
+    "flag": "🇸🇰",
+    "capital": "Bratislava",
+    "largest_city": "Bratislava",
+    "population_millions": 5.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/slovakia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Slovak Republic",
+      "SK",
+      "Slovenská republika"
+    ]
+  },
+  {
+    "id": "norway",
+    "iso2": "NO",
+    "iso3": "NOR",
+    "name": "Norway",
+    "flag": "🇳🇴",
+    "capital": "Oslo",
+    "largest_city": "Oslo",
+    "population_millions": 5.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/norway.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Kingdom of Norway",
+      "NO",
+      "Norge",
+      "Noreg",
+      "Kongeriket Norge",
+      "Kongeriket Noreg"
+    ]
+  },
+  {
+    "id": "congo",
+    "iso2": "CG",
+    "iso3": "COG",
+    "name": "Congo",
+    "flag": "🇨🇬",
+    "capital": "Brazzaville",
+    "largest_city": "Brazzaville",
+    "population_millions": 5.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/congo.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of the Congo",
+      "CG",
+      "Congo-Brazzaville"
+    ]
+  },
+  {
+    "id": "costa_rica",
+    "iso2": "CR",
+    "iso3": "CRI",
+    "name": "Costa Rica",
+    "flag": "🇨🇷",
+    "capital": "San José",
+    "largest_city": "San Jose",
+    "population_millions": 5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/costa_rica.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Costa Rica",
+      "CR",
+      "República de Costa Rica"
+    ]
+  },
+  {
+    "id": "ireland",
+    "iso2": "IE",
+    "iso3": "IRL",
+    "name": "Ireland",
+    "flag": "🇮🇪",
+    "capital": "Dublin",
+    "largest_city": "Dublin",
+    "population_millions": 4.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/ireland.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Ireland",
+      "IE",
+      "Éire",
+      "Poblacht na hÉireann"
+    ]
+  },
+  {
+    "id": "new_zealand",
+    "iso2": "NZ",
+    "iso3": "NZL",
+    "name": "New Zealand",
+    "flag": "🇳🇿",
+    "capital": "Wellington",
+    "largest_city": "Auckland",
+    "population_millions": 4.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/new_zealand.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "NZ",
+      "Aotearoa"
+    ]
+  },
+  {
+    "id": "liberia",
+    "iso2": "LR",
+    "iso3": "LBR",
+    "name": "Liberia",
+    "flag": "🇱🇷",
+    "capital": "Monrovia",
+    "largest_city": "Monrovia",
+    "population_millions": 4.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/liberia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Liberia",
+      "LR"
+    ]
+  },
+  {
+    "id": "oman",
+    "iso2": "OM",
+    "iso3": "OMN",
+    "name": "Oman",
+    "flag": "🇴🇲",
+    "capital": "Muscat",
+    "largest_city": "Muscat",
+    "population_millions": 4.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/oman.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Sultanate of Oman",
+      "OM",
+      "Salṭanat ʻUmān"
+    ]
+  },
+  {
+    "id": "central_african_republic",
+    "iso2": "CF",
+    "iso3": "CAF",
+    "name": "Central African Republic",
+    "flag": "🇨🇫",
+    "capital": "Bangui",
+    "largest_city": "Bangui",
+    "population_millions": 4.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/central_african_republic.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "CF",
+      "République centrafricaine"
+    ]
+  },
+  {
+    "id": "palestine",
+    "iso2": "PS",
+    "iso3": "PSE",
+    "name": "Palestine",
+    "flag": "🇵🇸",
+    "capital": "Ramallah",
+    "largest_city": "Gaza",
+    "population_millions": 4.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/palestine.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Palestinian Territory",
+      "State of Palestine",
+      "PS",
+      "Palestine, State of",
+      "Dawlat Filasṭin"
+    ]
+  },
+  {
+    "id": "mauritania",
+    "iso2": "MR",
+    "iso3": "MRT",
+    "name": "Mauritania",
+    "flag": "🇲🇷",
+    "capital": "Nouakchott",
+    "largest_city": "Nouakchott",
+    "population_millions": 4.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/mauritania.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Islamic Republic of Mauritania",
+      "MR",
+      "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"
+    ]
+  },
+  {
+    "id": "panama",
+    "iso2": "PA",
+    "iso3": "PAN",
+    "name": "Panama",
+    "flag": "🇵🇦",
+    "capital": "Panama City",
+    "largest_city": "Panama City",
+    "population_millions": 4.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/panama.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Panama",
+      "PA",
+      "República de Panamá"
+    ]
+  },
+  {
+    "id": "kuwait",
+    "iso2": "KW",
+    "iso3": "KWT",
+    "name": "Kuwait",
+    "flag": "🇰🇼",
+    "capital": "Kuwait City",
+    "largest_city": "Kuwait City",
+    "population_millions": 4.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/kuwait.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "State of Kuwait",
+      "KW",
+      "Dawlat al-Kuwait"
+    ]
+  },
+  {
+    "id": "croatia",
+    "iso2": "HR",
+    "iso3": "HRV",
+    "name": "Croatia",
+    "flag": "🇭🇷",
+    "capital": "Zagreb",
+    "largest_city": "Zagreb",
+    "population_millions": 3.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/croatia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Croatia",
+      "HR",
+      "Hrvatska",
+      "Republika Hrvatska"
+    ]
+  },
+  {
+    "id": "georgia",
+    "iso2": "GE",
+    "iso3": "GEO",
+    "name": "Georgia",
+    "flag": "🇬🇪",
+    "capital": "Tbilisi",
+    "largest_city": "Tbilisi",
+    "population_millions": 3.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/georgia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "GE",
+      "Sakartvelo"
+    ]
+  },
+  {
+    "id": "moldova",
+    "iso2": "MD",
+    "iso3": "MDA",
+    "name": "Moldova",
+    "flag": "🇲🇩",
+    "capital": "Chișinău",
+    "largest_city": "Chisinau",
+    "population_millions": 3.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/moldova.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Moldova",
+      "MD",
+      "Moldova, Republic of",
+      "Republica Moldova"
+    ]
+  },
+  {
+    "id": "uruguay",
+    "iso2": "UY",
+    "iso3": "URY",
+    "name": "Uruguay",
+    "flag": "🇺🇾",
+    "capital": "Montevideo",
+    "largest_city": "Montevideo",
+    "population_millions": 3.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/uruguay.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Oriental Republic of Uruguay",
+      "UY",
+      "República Oriental del Uruguay"
+    ]
+  },
+  {
+    "id": "bosnia_and_herzegovina",
+    "iso2": "BA",
+    "iso3": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "flag": "🇧🇦",
+    "capital": "Sarajevo",
+    "largest_city": "Sarajevo",
+    "population_millions": 3.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bosnia_and_herzegovina.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "BA",
+      "Bosnia-Herzegovina",
+      "Босна и Херцеговина"
+    ]
+  },
+  {
+    "id": "mongolia",
+    "iso2": "MN",
+    "iso3": "MNG",
+    "name": "Mongolia",
+    "flag": "🇲🇳",
+    "capital": "Ulan Bator",
+    "largest_city": "Ulaanbaatar",
+    "population_millions": 3.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/mongolia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "MN"
+    ]
+  },
+  {
+    "id": "armenia",
+    "iso2": "AM",
+    "iso3": "ARM",
+    "name": "Armenia",
+    "flag": "🇦🇲",
+    "capital": "Yerevan",
+    "largest_city": "Yerevan",
+    "population_millions": 3.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/armenia.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of Armenia",
+      "AM",
+      "Hayastan",
+      "Հայաստանի Հանրապետություն"
+    ]
+  },
+  {
+    "id": "albania",
+    "iso2": "AL",
+    "iso3": "ALB",
+    "name": "Albania",
+    "flag": "🇦🇱",
+    "capital": "Tirana",
+    "largest_city": "Tirana",
+    "population_millions": 2.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/albania.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Albania",
+      "AL",
+      "Shqipëri",
+      "Shqipëria",
+      "Shqipnia"
+    ]
+  },
+  {
+    "id": "jamaica",
+    "iso2": "JM",
+    "iso3": "JAM",
+    "name": "Jamaica",
+    "flag": "🇯🇲",
+    "capital": "Kingston",
+    "largest_city": "Kingston",
+    "population_millions": 2.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/jamaica.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "JM"
+    ]
+  },
+  {
+    "id": "lithuania",
+    "iso2": "LT",
+    "iso3": "LTU",
+    "name": "Lithuania",
+    "flag": "🇱🇹",
+    "capital": "Vilnius",
+    "largest_city": "Vilnius",
+    "population_millions": 2.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/lithuania.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Lithuania",
+      "LT",
+      "Lietuvos Respublika"
+    ]
+  },
+  {
+    "id": "qatar",
+    "iso2": "QA",
+    "iso3": "QAT",
+    "name": "Qatar",
+    "flag": "🇶🇦",
+    "capital": "Doha",
+    "largest_city": "Doha",
+    "population_millions": 2.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/qatar.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "State of Qatar",
+      "QA",
+      "Dawlat Qaṭar"
+    ]
+  },
+  {
+    "id": "namibia",
+    "iso2": "NA",
+    "iso3": "NAM",
+    "name": "Namibia",
+    "flag": "🇳🇦",
+    "capital": "Windhoek",
+    "largest_city": "Windhoek",
+    "population_millions": 2.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/namibia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Namibia",
+      "NA",
+      "Namibië"
+    ]
+  },
+  {
+    "id": "botswana",
+    "iso2": "BW",
+    "iso3": "BWA",
+    "name": "Botswana",
+    "flag": "🇧🇼",
+    "capital": "Gaborone",
+    "largest_city": "Gaborone",
+    "population_millions": 2.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/botswana.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Botswana",
+      "BW",
+      "Lefatshe la Botswana"
+    ]
+  },
+  {
+    "id": "gambia",
+    "iso2": "GM",
+    "iso3": "GMB",
+    "name": "Gambia",
+    "flag": "🇬🇲",
+    "capital": "Banjul",
+    "largest_city": "Serekunda",
+    "population_millions": 2.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/gambia.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of the Gambia",
+      "GM"
+    ]
+  },
+  {
+    "id": "gabon",
+    "iso2": "GA",
+    "iso3": "GAB",
+    "name": "Gabon",
+    "flag": "🇬🇦",
+    "capital": "Libreville",
+    "largest_city": "Libreville",
+    "population_millions": 2.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/gabon.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Gabonese Republic",
+      "GA",
+      "République Gabonaise"
+    ]
+  },
+  {
+    "id": "lesotho",
+    "iso2": "LS",
+    "iso3": "LSO",
+    "name": "Lesotho",
+    "flag": "🇱🇸",
+    "capital": "Maseru",
+    "largest_city": "Maseru",
+    "population_millions": 2.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/lesotho.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Kingdom of Lesotho",
+      "LS",
+      "Muso oa Lesotho"
+    ]
+  },
+  {
+    "id": "north_macedonia",
+    "iso2": "MK",
+    "iso3": "MKD",
+    "name": "North Macedonia",
+    "flag": "🇲🇰",
+    "capital": "Skopje",
+    "largest_city": "Skopje",
+    "population_millions": 2.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/north_macedonia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of North Macedonia",
+      "MK",
+      "The former Yugoslav Republic of Macedonia",
+      "Macedonia, The Former Yugoslav Republic of",
+      "Република Северна Македонија",
+      "Macedonia"
+    ]
+  },
+  {
+    "id": "slovenia",
+    "iso2": "SI",
+    "iso3": "SVN",
+    "name": "Slovenia",
+    "flag": "🇸🇮",
+    "capital": "Ljubljana",
+    "largest_city": "Ljubljana",
+    "population_millions": 2.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/slovenia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Slovenia",
+      "SI",
+      "Republika Slovenija"
+    ]
+  },
+  {
+    "id": "guinea_bissau",
+    "iso2": "GW",
+    "iso3": "GNB",
+    "name": "Guinea-Bissau",
+    "flag": "🇬🇼",
+    "capital": "Bissau",
+    "largest_city": "Bissau",
+    "population_millions": 1.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/guinea_bissau.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Guinea-Bissau",
+      "GW",
+      "República da Guiné-Bissau"
+    ]
+  },
+  {
+    "id": "latvia",
+    "iso2": "LV",
+    "iso3": "LVA",
+    "name": "Latvia",
+    "flag": "🇱🇻",
+    "capital": "Riga",
+    "largest_city": "Riga",
+    "population_millions": 1.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/latvia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Latvia",
+      "LV",
+      "Latvijas Republika"
+    ]
+  },
+  {
+    "id": "bahrain",
+    "iso2": "BH",
+    "iso3": "BHR",
+    "name": "Bahrain",
+    "flag": "🇧🇭",
+    "capital": "Manama",
+    "largest_city": "Manama",
+    "population_millions": 1.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bahrain.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Kingdom of Bahrain",
+      "BH",
+      "Mamlakat al-Baḥrayn"
+    ]
+  },
+  {
+    "id": "trinidad_and_tobago",
+    "iso2": "TT",
+    "iso3": "TTO",
+    "name": "Trinidad and Tobago",
+    "flag": "🇹🇹",
+    "capital": "Port of Spain",
+    "largest_city": "Chaguanas",
+    "population_millions": 1.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/trinidad_and_tobago.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Republic of Trinidad and Tobago",
+      "TT"
+    ]
+  },
+  {
+    "id": "estonia",
+    "iso2": "EE",
+    "iso3": "EST",
+    "name": "Estonia",
+    "flag": "🇪🇪",
+    "capital": "Tallinn",
+    "largest_city": "Tallinn",
+    "population_millions": 1.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/estonia.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Estonia",
+      "EE",
+      "Eesti",
+      "Eesti Vabariik"
+    ]
+  },
+  {
+    "id": "equatorial_guinea",
+    "iso2": "GQ",
+    "iso3": "GNQ",
+    "name": "Equatorial Guinea",
+    "flag": "🇬🇶",
+    "capital": "Malabo",
+    "largest_city": "Bata",
+    "population_millions": 1.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/equatorial_guinea.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Equatorial Guinea",
+      "GQ",
+      "República de Guinea Ecuatorial",
+      "République de Guinée équatoriale",
+      "República da Guiné Equatorial"
+    ]
+  },
+  {
+    "id": "mauritius",
+    "iso2": "MU",
+    "iso3": "MUS",
+    "name": "Mauritius",
+    "flag": "🇲🇺",
+    "capital": "Port Louis",
+    "largest_city": "Port Louis",
+    "population_millions": 1.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/mauritius.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Mauritius",
+      "MU",
+      "République de Maurice"
+    ]
+  },
+  {
+    "id": "timor_leste",
+    "iso2": "TL",
+    "iso3": "TLS",
+    "name": "Timor-Leste",
+    "flag": "🇹🇱",
+    "capital": "Dili",
+    "largest_city": "Dili",
+    "population_millions": 1.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/timor_leste.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Timor Leste",
+      "Democratic Republic of Timor-Leste",
+      "TL",
+      "East Timor",
+      "Timor",
+      "República Democrática de Timor-Leste",
+      "Repúblika Demokrátika Timór-Leste",
+      "Timór Lorosa'e",
+      "Timor Lorosae"
+    ]
+  },
+  {
+    "id": "cyprus",
+    "iso2": "CY",
+    "iso3": "CYP",
+    "name": "Cyprus",
+    "flag": "🇨🇾",
+    "capital": "Nicosia",
+    "largest_city": "Nicosia",
+    "population_millions": 1.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/cyprus.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Cyprus",
+      "CY",
+      "Kýpros",
+      "Kıbrıs",
+      "Κυπριακή Δημοκρατία",
+      "Kıbrıs Cumhuriyeti"
+    ]
+  },
+  {
+    "id": "eswatini",
+    "iso2": "SZ",
+    "iso3": "SWZ",
+    "name": "Eswatini",
+    "flag": "🇸🇿",
+    "capital": "Lobamba",
+    "largest_city": "Manzini",
+    "population_millions": 1.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/eswatini.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Kingdom of Eswatini",
+      "SZ",
+      "Swaziland",
+      "weSwatini",
+      "Swatini",
+      "Ngwane",
+      "Umbuso weSwatini"
+    ]
+  },
+  {
+    "id": "djibouti",
+    "iso2": "DJ",
+    "iso3": "DJI",
+    "name": "Djibouti",
+    "flag": "🇩🇯",
+    "capital": "Djibouti",
+    "largest_city": "Djibouti",
+    "population_millions": 1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/djibouti.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Djibouti",
+      "DJ",
+      "Jabuuti",
+      "Gabuuti",
+      "République de Djibouti",
+      "Gabuutih Ummuuno",
+      "Jamhuuriyadda Jabuuti"
+    ]
+  },
+  {
+    "id": "fiji",
+    "iso2": "FJ",
+    "iso3": "FJI",
+    "name": "Fiji",
+    "flag": "🇫🇯",
+    "capital": "Suva",
+    "largest_city": "Suva",
+    "population_millions": 0.9,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/fiji.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Republic of Fiji",
+      "FJ",
+      "Viti",
+      "Matanitu ko Viti",
+      "Fijī Gaṇarājya"
+    ]
+  },
+  {
+    "id": "bhutan",
+    "iso2": "BT",
+    "iso3": "BTN",
+    "name": "Bhutan",
+    "flag": "🇧🇹",
+    "capital": "Thimphu",
+    "largest_city": "Thimphu",
+    "population_millions": 0.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bhutan.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Kingdom of Bhutan",
+      "BT"
+    ]
+  },
+  {
+    "id": "guyana",
+    "iso2": "GY",
+    "iso3": "GUY",
+    "name": "Guyana",
+    "flag": "🇬🇾",
+    "capital": "Georgetown",
+    "largest_city": "Georgetown",
+    "population_millions": 0.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/guyana.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Co-operative Republic of Guyana",
+      "GY"
+    ]
+  },
+  {
+    "id": "comoros",
+    "iso2": "KM",
+    "iso3": "COM",
+    "name": "Comoros",
+    "flag": "🇰🇲",
+    "capital": "Moroni",
+    "largest_city": "Moroni",
+    "population_millions": 0.8,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/comoros.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Union of the Comoros",
+      "KM",
+      "Union des Comores",
+      "Udzima wa Komori",
+      "al-Ittiḥād al-Qumurī"
+    ]
+  },
+  {
+    "id": "solomon_islands",
+    "iso2": "SB",
+    "iso3": "SLB",
+    "name": "Solomon Islands",
+    "flag": "🇸🇧",
+    "capital": "Honiara",
+    "largest_city": "Honiara",
+    "population_millions": 0.7,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/solomon_islands.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "SB"
+    ]
+  },
+  {
+    "id": "luxembourg",
+    "iso2": "LU",
+    "iso3": "LUX",
+    "name": "Luxembourg",
+    "flag": "🇱🇺",
+    "capital": "Luxembourg",
+    "largest_city": "Luxembourg",
+    "population_millions": 0.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/luxembourg.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Grand Duchy of Luxembourg",
+      "LU",
+      "Grand-Duché de Luxembourg",
+      "Großherzogtum Luxemburg",
+      "Groussherzogtum Lëtzebuerg"
+    ]
+  },
+  {
+    "id": "montenegro",
+    "iso2": "ME",
+    "iso3": "MNE",
+    "name": "Montenegro",
+    "flag": "🇲🇪",
+    "capital": "Podgorica",
+    "largest_city": "Podgorica",
+    "population_millions": 0.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/montenegro.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "ME",
+      "Crna Gora"
+    ]
+  },
+  {
+    "id": "suriname",
+    "iso2": "SR",
+    "iso3": "SUR",
+    "name": "Suriname",
+    "flag": "🇸🇷",
+    "capital": "Paramaribo",
+    "largest_city": "Paramaribo",
+    "population_millions": 0.6,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/suriname.svg"
+    },
+    "region": "South America",
+    "aliases": [
+      "Republic of Suriname",
+      "SR",
+      "Sarnam",
+      "Sranangron",
+      "Republiek Suriname"
+    ]
+  },
+  {
+    "id": "cape_verde",
+    "iso2": "CV",
+    "iso3": "CPV",
+    "name": "Cape Verde",
+    "flag": "🇨🇻",
+    "capital": "Praia",
+    "largest_city": "Praia",
+    "population_millions": 0.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/cape_verde.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Cabo Verde",
+      "Republic of Cabo Verde",
+      "CV",
+      "República de Cabo Verde"
+    ]
+  },
+  {
+    "id": "malta",
+    "iso2": "MT",
+    "iso3": "MLT",
+    "name": "Malta",
+    "flag": "🇲🇹",
+    "capital": "Valletta",
+    "largest_city": "Birkirkara",
+    "population_millions": 0.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/malta.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Republic of Malta",
+      "MT",
+      "Repubblika ta' Malta"
+    ]
+  },
+  {
+    "id": "maldives",
+    "iso2": "MV",
+    "iso3": "MDV",
+    "name": "Maldives",
+    "flag": "🇲🇻",
+    "capital": "Malé",
+    "largest_city": "Male",
+    "population_millions": 0.5,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/maldives.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Republic of the Maldives",
+      "MV",
+      "Maldive Islands",
+      "Dhivehi Raajjeyge Jumhooriyya"
+    ]
+  },
+  {
+    "id": "brunei",
+    "iso2": "BN",
+    "iso3": "BRN",
+    "name": "Brunei",
+    "flag": "🇧🇳",
+    "capital": "Bandar Seri Begawan",
+    "largest_city": "Bandar Seri Begawan",
+    "population_millions": 0.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/brunei.svg"
+    },
+    "region": "Asia",
+    "aliases": [
+      "Nation of Brunei, Abode of Peace",
+      "BN",
+      "Brunei Darussalam",
+      "Nation of Brunei",
+      "the Abode of Peace"
+    ]
+  },
+  {
+    "id": "bahamas",
+    "iso2": "BS",
+    "iso3": "BHS",
+    "name": "Bahamas",
+    "flag": "🇧🇸",
+    "capital": "Nassau",
+    "largest_city": "Nassau",
+    "population_millions": 0.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/bahamas.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Commonwealth of the Bahamas",
+      "BS"
+    ]
+  },
+  {
+    "id": "belize",
+    "iso2": "BZ",
+    "iso3": "BLZ",
+    "name": "Belize",
+    "flag": "🇧🇿",
+    "capital": "Belmopan",
+    "largest_city": "Belize City",
+    "population_millions": 0.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/belize.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "BZ"
+    ]
+  },
+  {
+    "id": "iceland",
+    "iso2": "IS",
+    "iso3": "ISL",
+    "name": "Iceland",
+    "flag": "🇮🇸",
+    "capital": "Reykjavik",
+    "largest_city": "Reykjavik",
+    "population_millions": 0.4,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/iceland.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "IS",
+      "Island",
+      "Republic of Iceland",
+      "Lýðveldið Ísland"
+    ]
+  },
+  {
+    "id": "barbados",
+    "iso2": "BB",
+    "iso3": "BRB",
+    "name": "Barbados",
+    "flag": "🇧🇧",
+    "capital": "Bridgetown",
+    "largest_city": "Bridgetown",
+    "population_millions": 0.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/barbados.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "BB"
+    ]
+  },
+  {
+    "id": "vanuatu",
+    "iso2": "VU",
+    "iso3": "VUT",
+    "name": "Vanuatu",
+    "flag": "🇻🇺",
+    "capital": "Port Vila",
+    "largest_city": "Port Vila",
+    "population_millions": 0.3,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/vanuatu.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Republic of Vanuatu",
+      "VU",
+      "Ripablik blong Vanuatu",
+      "République de Vanuatu"
+    ]
+  },
+  {
+    "id": "saint_lucia",
+    "iso2": "LC",
+    "iso3": "LCA",
+    "name": "Saint Lucia",
+    "flag": "🇱🇨",
+    "capital": "Castries",
+    "largest_city": "Castries",
+    "population_millions": 0.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/saint_lucia.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "LC"
+    ]
+  },
+  {
+    "id": "sao_tome_and_principe",
+    "iso2": "ST",
+    "iso3": "STP",
+    "name": "São Tomé and Príncipe",
+    "flag": "🇸🇹",
+    "capital": "São Tomé",
+    "largest_city": "Sao Tome",
+    "population_millions": 0.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/sao_tome_and_principe.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Sao Tome and Principe",
+      "Democratic Republic of São Tomé and Príncipe",
+      "ST",
+      "República Democrática de São Tomé e Príncipe"
+    ]
+  },
+  {
+    "id": "samoa",
+    "iso2": "WS",
+    "iso3": "WSM",
+    "name": "Samoa",
+    "flag": "🇼🇸",
+    "capital": "Apia",
+    "largest_city": "Apia",
+    "population_millions": 0.2,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/samoa.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Independent State of Samoa",
+      "WS",
+      "Malo Saʻoloto Tutoʻatasi o Sāmoa"
+    ]
+  },
+  {
+    "id": "andorra",
+    "iso2": "AD",
+    "iso3": "AND",
+    "name": "Andorra",
+    "flag": "🇦🇩",
+    "capital": "Andorra la Vella",
+    "largest_city": "Andorra la Vella",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/andorra.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Principality of Andorra",
+      "AD",
+      "Principat d'Andorra"
+    ]
+  },
+  {
+    "id": "antigua_and_barbuda",
+    "iso2": "AG",
+    "iso3": "ATG",
+    "name": "Antigua and Barbuda",
+    "flag": "🇦🇬",
+    "capital": "Saint John's",
+    "largest_city": "Saint John's",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/antigua_and_barbuda.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "AG"
+    ]
+  },
+  {
+    "id": "dominica",
+    "iso2": "DM",
+    "iso3": "DMA",
+    "name": "Dominica",
+    "flag": "🇩🇲",
+    "capital": "Roseau",
+    "largest_city": "Roseau",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/dominica.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Commonwealth of Dominica",
+      "DM",
+      "Dominique",
+      "Wai‘tu kubuli"
+    ]
+  },
+  {
+    "id": "micronesia",
+    "iso2": "FM",
+    "iso3": "FSM",
+    "name": "Micronesia",
+    "flag": "🇫🇲",
+    "capital": "Palikir",
+    "largest_city": "Weno",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/micronesia.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Federated States of Micronesia",
+      "FM",
+      "Micronesia, Federated States of"
+    ]
+  },
+  {
+    "id": "grenada",
+    "iso2": "GD",
+    "iso3": "GRD",
+    "name": "Grenada",
+    "flag": "🇬🇩",
+    "capital": "St. George's",
+    "largest_city": "St. George's",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/grenada.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "GD"
+    ]
+  },
+  {
+    "id": "kiribati",
+    "iso2": "KI",
+    "iso3": "KIR",
+    "name": "Kiribati",
+    "flag": "🇰🇮",
+    "capital": "South Tarawa",
+    "largest_city": "Tarawa",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/kiribati.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Independent and Sovereign Republic of Kiribati",
+      "KI",
+      "Republic of Kiribati",
+      "Ribaberiki Kiribati"
+    ]
+  },
+  {
+    "id": "saint_kitts_and_nevis",
+    "iso2": "KN",
+    "iso3": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "flag": "🇰🇳",
+    "capital": "Basseterre",
+    "largest_city": "Basseterre",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/saint_kitts_and_nevis.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "Federation of Saint Christopher and Nevis",
+      "KN"
+    ]
+  },
+  {
+    "id": "marshall_islands",
+    "iso2": "MH",
+    "iso3": "MHL",
+    "name": "Marshall Islands",
+    "flag": "🇲🇭",
+    "capital": "Majuro",
+    "largest_city": "Majuro",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/marshall_islands.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Republic of the Marshall Islands",
+      "MH",
+      "Aolepān Aorōkin M̧ajeļ"
+    ]
+  },
+  {
+    "id": "seychelles",
+    "iso2": "SC",
+    "iso3": "SYC",
+    "name": "Seychelles",
+    "flag": "🇸🇨",
+    "capital": "Victoria",
+    "largest_city": "Victoria",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/seychelles.svg"
+    },
+    "region": "Africa",
+    "aliases": [
+      "Republic of Seychelles",
+      "SC",
+      "Repiblik Sesel",
+      "République des Seychelles"
+    ]
+  },
+  {
+    "id": "tonga",
+    "iso2": "TO",
+    "iso3": "TON",
+    "name": "Tonga",
+    "flag": "🇹🇴",
+    "capital": "Nuku'alofa",
+    "largest_city": "Nuku'alofa",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/tonga.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Kingdom of Tonga",
+      "TO"
+    ]
+  },
+  {
+    "id": "saint_vincent_and_the_grenadines",
+    "iso2": "VC",
+    "iso3": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "flag": "🇻🇨",
+    "capital": "Kingstown",
+    "largest_city": "Kingstown",
+    "population_millions": 0.1,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/saint_vincent_and_the_grenadines.svg"
+    },
+    "region": "North America",
+    "aliases": [
+      "VC"
+    ]
+  },
+  {
+    "id": "liechtenstein",
+    "iso2": "LI",
+    "iso3": "LIE",
+    "name": "Liechtenstein",
+    "flag": "🇱🇮",
+    "capital": "Vaduz",
+    "largest_city": "Schaan",
+    "population_millions": 0,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/liechtenstein.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Principality of Liechtenstein",
+      "LI",
+      "Fürstentum Liechtenstein"
+    ]
+  },
+  {
+    "id": "monaco",
+    "iso2": "MC",
+    "iso3": "MCO",
+    "name": "Monaco",
+    "flag": "🇲🇨",
+    "capital": "Monaco",
+    "largest_city": "Monte Carlo",
+    "population_millions": 0,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/monaco.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Principality of Monaco",
+      "MC",
+      "Principauté de Monaco"
+    ]
+  },
+  {
+    "id": "palau",
+    "iso2": "PW",
+    "iso3": "PLW",
+    "name": "Palau",
+    "flag": "🇵🇼",
+    "capital": "Ngerulmud",
+    "largest_city": "Koror",
+    "population_millions": 0,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/palau.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "Republic of Palau",
+      "PW",
+      "Beluu er a Belau"
+    ]
+  },
+  {
+    "id": "san_marino",
+    "iso2": "SM",
+    "iso3": "SMR",
+    "name": "San Marino",
+    "flag": "🇸🇲",
+    "capital": "City of San Marino",
+    "largest_city": "Serravalle",
+    "population_millions": 0,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/san_marino.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Most Serene Republic of San Marino",
+      "SM",
+      "Republic of San Marino",
+      "Repubblica di San Marino"
+    ]
+  },
+  {
+    "id": "tuvalu",
+    "iso2": "TV",
+    "iso3": "TUV",
+    "name": "Tuvalu",
+    "flag": "🇹🇻",
+    "capital": "Funafuti",
+    "largest_city": "Funafuti",
+    "population_millions": 0,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/tuvalu.svg"
+    },
+    "region": "Oceania",
+    "aliases": [
+      "TV"
+    ]
+  },
+  {
+    "id": "vatican_city",
+    "iso2": "VA",
+    "iso3": "VAT",
+    "name": "Vatican City",
+    "flag": "🇻🇦",
+    "capital": "Vatican City",
+    "largest_city": "Vatican City",
+    "population_millions": 0,
+    "shape_data": {
+      "type": "image",
+      "src": "assets/shapes/vatican_city.svg"
+    },
+    "region": "Europe",
+    "aliases": [
+      "Vatican",
+      "Vatican City State",
+      "VA",
+      "Holy See (Vatican City State)",
+      "Stato della Città del Vaticano"
+    ]
+  }
+]

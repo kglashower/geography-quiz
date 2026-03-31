@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Academy</title>
+  <meta name="theme-color" content="#17324a">
+  <meta name="description" content="Atlas Academy is a geography learning game with adaptive quizzes, study mode, and offline-ready progress tracking.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="update-banner hidden" id="update-banner" role="status" aria-live="polite">
+      <div>
+        <strong>Update available</strong>
+        <p id="update-copy">A newer version of Atlas Academy is ready.</p>
+      </div>
+      <div class="update-banner-actions">
+        <button class="secondary-button" id="update-button" type="button">Reload</button>
+        <button class="ghost-button" id="dismiss-update" type="button">Later</button>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Geography Learning Game</p>
+        <h1>Atlas Academy</h1>
+      </div>
+      <div class="topbar-actions">
+        <div class="pill" id="top-streak">Streak: 0 days</div>
+        <button class="ghost-button" id="theme-toggle" type="button" aria-label="Toggle theme">Dark Mode</button>
+      </div>
+    </header>
+
+    <main id="app" class="app-main" aria-live="polite">
+      <section class="view active" id="home-view" data-view="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Study smarter, not flatter</p>
+            <h2>Learn capitals, flags, populations, and country shapes like a game.</h2>
+            <p class="lede">
+              Adaptive quizzes surface weak facts more often, while study mode keeps every country one tap away.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button" data-action="start-quiz">Start Quiz</button>
+              <button class="secondary-button" data-action="open-study">Study Mode</button>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <div class="metric-card">
+              <span>Overall mastery</span>
+              <strong id="home-mastery">0%</strong>
+              <div class="progress-track"><div class="progress-fill" id="home-mastery-bar"></div></div>
+            </div>
+            <div class="metric-card">
+              <span>Questions answered</span>
+              <strong id="home-questions">0</strong>
+            </div>
+            <div class="metric-card">
+              <span>Focus recommendation</span>
+              <strong id="home-recommendation">Country to Capital</strong>
+            </div>
+          </aside>
+        </div>
+
+        <section class="menu-grid">
+          <button class="menu-card" data-action="start-quiz">
+            <span class="menu-icon">▶</span>
+            <strong>Start Quiz</strong>
+            <p>Jump into a timed practice session with adaptive questions.</p>
+          </button>
+          <button class="menu-card" data-action="open-study">
+            <span class="menu-icon">▣</span>
+            <strong>Study Mode</strong>
+            <p>Browse countries, reveal facts, and review recent mistakes.</p>
+          </button>
+          <button class="menu-card" data-action="open-stats">
+            <span class="menu-icon">◔</span>
+            <strong>Statistics</strong>
+            <p>Track mastery, streaks, weak spots, and practice consistency.</p>
+          </button>
+          <button class="menu-card" data-action="open-settings">
+            <span class="menu-icon">⚙</span>
+            <strong>Settings</strong>
+            <p>Choose modes, difficulty, session length, and filters.</p>
+          </button>
+        </section>
+      </section>
+
+      <section class="view" id="quiz-view" data-view="quiz">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Quiz Session</p>
+            <h2 id="quiz-title">Mixed Mode</h2>
+          </div>
+          <div class="section-actions">
+            <div class="pill" id="quiz-progress-label">Question 1 of 10</div>
+            <button class="ghost-button" data-action="end-session">End Session</button>
+          </div>
+        </div>
+
+        <section class="quiz-layout">
+          <aside class="quiz-sidebar panel">
+            <div class="progress-ring-wrap">
+              <svg viewBox="0 0 120 120" class="progress-ring" aria-hidden="true">
+                <circle cx="60" cy="60" r="48" class="ring-base"></circle>
+                <circle cx="60" cy="60" r="48" class="ring-value" id="quiz-ring"></circle>
+              </svg>
+              <div class="progress-ring-label" id="quiz-ring-label">0%</div>
+            </div>
+            <div class="sidebar-stats">
+              <div><span>Score</span><strong id="quiz-score">0</strong></div>
+              <div><span>Accuracy</span><strong id="quiz-accuracy">0%</strong></div>
+              <div><span>Streak</span><strong id="quiz-streak">0</strong></div>
+            </div>
+            <div class="mini-progress">
+              <span>Session progress</span>
+              <div class="progress-track"><div class="progress-fill" id="quiz-session-bar"></div></div>
+            </div>
+          </aside>
+
+          <div class="panel quiz-panel">
+            <div class="question-meta">
+              <span class="badge" id="question-mode-badge">Country → Capital</span>
+              <span class="badge subtle" id="question-region-badge">Global</span>
+            </div>
+            <div class="prompt-visual" id="prompt-visual"></div>
+            <h3 id="question-prompt">Loading question…</h3>
+            <p class="helper-text" id="question-helper">Choose the best answer.</p>
+
+            <form id="typed-answer-form" class="typed-answer hidden" autocomplete="off">
+              <label class="sr-only" for="typed-answer-input">Type your answer</label>
+              <input id="typed-answer-input" name="typedAnswer" type="text" placeholder="Type your answer">
+              <button class="secondary-button" type="submit">Submit</button>
+            </form>
+
+            <div class="choices-grid" id="answer-choices"></div>
+
+            <div class="feedback-card hidden" id="feedback-card">
+              <div id="feedback-status"></div>
+              <p id="feedback-copy"></p>
+              <div class="answer-recap" id="answer-recap"></div>
+            </div>
+
+            <div class="question-actions">
+              <button class="ghost-button" id="skip-button" type="button">Skip</button>
+              <button class="primary-button hidden" id="next-button" type="button">Next Question</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="study-view" data-view="study">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Study Mode</p>
+            <h2>Country Explorer</h2>
+          </div>
+          <div class="section-actions">
+            <input type="search" id="study-search" class="search-input" placeholder="Search countries, capitals, aliases">
+            <select id="study-region-filter" class="select-input" aria-label="Filter by continent"></select>
+          </div>
+        </div>
+
+        <div class="study-layout">
+          <aside class="panel study-list-panel">
+            <div class="study-list" id="study-list"></div>
+          </aside>
+          <article class="panel study-detail" id="study-detail">
+            <p class="placeholder-copy">Choose a country to explore its facts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="stats-view" data-view="stats">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Statistics</p>
+            <h2>Progress Dashboard</h2>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <section class="panel stats-card">
+            <span>Total questions answered</span>
+            <strong id="stats-total-questions">0</strong>
+          </section>
+          <section class="panel stats-card">
+            <span>Overall accuracy</span>
+            <strong id="stats-overall-accuracy">0%</strong>
+          </section>
+          <section class="panel stats-card">
+            <span>Current streak</span>
+            <strong id="stats-current-streak">0 days</strong>
+          </section>
+          <section class="panel stats-card">
+            <span>Best streak</span>
+            <strong id="stats-best-streak">0 days</strong>
+          </section>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Accuracy by Fact Type</h3>
+            </div>
+            <div id="fact-accuracy-list" class="metric-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Practice Over Time</h3>
+            </div>
+            <div class="chart-wrap">
+              <svg id="daily-practice-chart" viewBox="0 0 420 180" role="img" aria-label="Daily practice counts chart"></svg>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Mastery Distribution</h3>
+            </div>
+            <div id="mastery-distribution" class="metric-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Mastery by Country</h3>
+            </div>
+            <div id="country-mastery-list" class="metric-list scrollable-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Weakest 10 Items</h3>
+            </div>
+            <div id="weakest-items" class="metric-list scrollable-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Strongest 10 Items</h3>
+            </div>
+            <div id="strongest-items" class="metric-list scrollable-list"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="settings-view" data-view="settings">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Settings</p>
+            <h2>Customize Practice</h2>
+          </div>
+        </div>
+
+        <div class="settings-layout">
+          <section class="panel">
+            <h3>Session Setup</h3>
+            <div class="settings-group">
+              <label class="field">
+                <span>Answer mode</span>
+                <select id="setting-answer-mode" class="select-input">
+                  <option value="multiple">Multiple choice</option>
+                  <option value="typed">Typed answers</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Session length</span>
+                <select id="setting-session-length" class="select-input">
+                  <option value="10">10 questions</option>
+                  <option value="15">15 questions</option>
+                  <option value="20">20 questions</option>
+                  <option value="30">30 questions</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Continent filter</span>
+                <select id="setting-continent-filter" class="select-input"></select>
+              </label>
+              <label class="toggle">
+                <input id="setting-focus-weak" type="checkbox">
+                <span>Focus on weak areas</span>
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Enabled Question Modes</h3>
+            <div class="checkbox-grid" id="mode-checkboxes"></div>
+          </section>
+
+          <section class="panel">
+            <h3>Progress Controls</h3>
+            <p class="settings-copy">Resetting progress clears mastery, streaks, and session history stored on this browser only.</p>
+            <div class="settings-actions">
+              <button class="secondary-button" id="export-progress" type="button">Export Progress</button>
+              <button class="secondary-button" id="import-progress" type="button">Import Progress</button>
+              <button class="danger-button" id="reset-progress" type="button">Reset Progress</button>
+            </div>
+            <input id="import-file-input" class="hidden" type="file" accept="application/json">
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="summary-view" data-view="summary">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Session Summary</p>
+            <h2>Nice work. Here’s what to tackle next.</h2>
+          </div>
+          <div class="section-actions">
+            <button class="secondary-button" data-action="start-quiz">Play Again</button>
+            <button class="ghost-button" data-action="open-home">Home</button>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <section class="panel summary-hero">
+            <div class="summary-score">
+              <span>Session score</span>
+              <strong id="summary-score">0</strong>
+            </div>
+            <div class="summary-stats">
+              <div><span>Accuracy</span><strong id="summary-accuracy">0%</strong></div>
+              <div><span>Best streak</span><strong id="summary-streak">0</strong></div>
+              <div><span>Answered</span><strong id="summary-answered">0</strong></div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Accuracy by Mode</h3>
+            <div id="summary-fact-accuracy" class="metric-list"></div>
+          </section>
+
+          <section class="panel">
+            <h3>Weakest Countries</h3>
+            <div id="summary-weakest-countries" class="metric-list"></div>
+          </section>
+
+          <section class="panel">
+            <h3>Weakest Fact Categories</h3>
+            <div id="summary-weakest-facts" class="metric-list"></div>
+          </section>
+
+          <section class="panel">
+            <h3>What to Study Next</h3>
+            <p id="summary-recommendation" class="recommendation-copy"></p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Primary">
+      <button class="nav-link active" data-action="open-home">Home</button>
+      <button class="nav-link" data-action="open-study">Study</button>
+      <button class="nav-link" data-action="start-quiz">Quiz</button>
+      <button class="nav-link" data-action="open-stats">Stats</button>
+      <button class="nav-link" data-action="open-settings">Settings</button>
+    </nav>
+  </div>
+
+  <template id="metric-row-template">
+    <div class="metric-row">
+      <div class="metric-row-copy">
+        <strong></strong>
+        <span></span>
+      </div>
+      <div class="metric-row-value">
+        <span class="metric-value"></span>
+        <div class="progress-track small"><div class="progress-fill"></div></div>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
