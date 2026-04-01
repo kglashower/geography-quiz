@@ -4048,7 +4048,15 @@ const FACT_TYPES = {
     promptType: "country",
     answerKey: "population_millions",
     helper: "Estimate the population to the nearest 0.1 million.",
-    displayAnswer: (country) => `${country.population_millions.toFixed(1)} million`
+    displayAnswer: (country) => formatPopulationMillions(country.population_millions)
+  },
+  most_populous_country: {
+    id: "most_populous_country",
+    label: "Choose the Most Populous Country",
+    promptType: "comparison",
+    answerKey: "name",
+    helper: "Choose the country with the highest population.",
+    displayAnswer: (country) => country.name
   },
   shape_country: {
     id: "shape_country",
@@ -4071,6 +4079,7 @@ const DEFAULT_SETTINGS = {
     "flag_country",
     "country_largest_city",
     "country_population",
+    "most_populous_country",
     "shape_country"
   ],
   answerMode: "multiple",
@@ -4195,9 +4204,7 @@ function cacheElements() {
     "stats-best-streak",
     "fact-accuracy-list",
     "mastery-distribution",
-    "country-mastery-list",
-    "weakest-items",
-    "strongest-items",
+    "continent-mastery-list",
     "daily-practice-chart",
     "setting-answer-mode",
     "setting-session-length",
@@ -4472,7 +4479,7 @@ function renderStudyDetail() {
     <div class="study-facts">
       ${renderStudyFactCard("Capital", reveal ? country.capital : "Tap reveal")}
       ${renderStudyFactCard("Most populous city", reveal ? country.largest_city : "Tap reveal")}
-      ${renderStudyFactCard("Population", reveal ? `${country.population_millions.toFixed(1)} million` : "Tap reveal")}
+      ${renderStudyFactCard("Population", reveal ? formatPopulationMillions(country.population_millions) : "Tap reveal")}
       ${renderStudyFactCard("Flag", reveal ? country.flag : "Tap reveal")}
       ${renderStudyFactCard("Aliases", reveal ? (country.aliases.join(", ") || "None") : "Tap reveal")}
       ${renderStudyFactCard("Shape asset", reveal ? `${country.shape_data.type} placeholder ready` : "Tap reveal")}
@@ -4508,12 +4515,12 @@ function renderQuiz() {
   elements["quiz-session-bar"].style.width = `${progressRatio * 100}%`;
   setRingProgress(progressRatio);
   elements["question-mode-badge"].textContent = FACT_TYPES[question.mode].label;
-  elements["question-region-badge"].textContent = question.country.region;
+  elements["question-region-badge"].textContent = question.regionLabel || question.country.region;
   elements["question-prompt"].textContent = question.prompt;
   elements["question-helper"].textContent = question.helper;
   elements["prompt-visual"].innerHTML = renderPromptVisual(question);
 
-  const typedMode = appState.settings.answerMode === "typed" && question.mode !== "country_flag";
+  const typedMode = appState.settings.answerMode === "typed" && question.mode !== "country_flag" && question.mode !== "most_populous_country";
   elements["typed-answer-form"].classList.toggle("hidden", !typedMode);
   elements["answer-choices"].classList.toggle("hidden", typedMode);
   elements["typed-answer-input"].value = "";
@@ -4525,7 +4532,7 @@ function renderQuiz() {
     elements["answer-choices"].innerHTML = question.choices
       .map(
         (choice, index) => `
-          <button class="choice-button" type="button" data-choice="${escapeAttribute(choice.value)}">
+          <button class="choice-button ${choice.className || ""}" type="button" data-choice="${escapeAttribute(choice.value)}">
             <strong>${index + 1}. ${choice.label}</strong>
           </button>
         `
@@ -4610,22 +4617,62 @@ function goToNextQuestion() {
 
 function generateQuestion() {
   const mode = pickFactMode();
-  const country = scheduleNextCountry(mode);
-  const distractors = pickDistractorCountries(country.id, mode, 3);
   const factConfig = FACT_TYPES[mode];
-  const prompt = buildPrompt(country, mode);
-  const choices = buildChoices(country, distractors, mode);
+  const questionSeed = buildQuestionSeed(mode);
+  const prompt = buildPrompt(questionSeed.country, mode);
+  const choices = buildChoices(questionSeed.country, questionSeed.distractors, mode);
 
   return {
-    id: `${country.id}:${mode}:${Date.now()}`,
+    id: `${questionSeed.country.id}:${mode}:${Date.now()}`,
     mode,
-    country,
+    country: questionSeed.country,
+    optionCountries: [questionSeed.country, ...questionSeed.distractors],
+    regionLabel: buildRegionLabel(mode, questionSeed),
     prompt,
     helper: factConfig.helper,
-    correctAnswer: factConfig.displayAnswer(country),
+    correctAnswer: factConfig.displayAnswer(questionSeed.country),
     choices,
-    visual: buildVisual(country, mode),
+    visual: buildVisual(questionSeed.country, mode),
     answered: false
+  };
+}
+
+function buildRegionLabel(mode, questionSeed) {
+  if (mode !== "most_populous_country") {
+    return questionSeed.country.region;
+  }
+
+  const regions = [...new Set([questionSeed.country, ...questionSeed.distractors].map((country) => country.region))];
+  return regions.length === 1 ? regions[0] : "Mixed continents";
+}
+
+function buildQuestionSeed(mode) {
+  if (mode === "most_populous_country") {
+    return buildMostPopulousCountryQuestion();
+  }
+
+  const country = scheduleNextCountry(mode);
+  const distractors = pickDistractorCountries(country.id, mode, 3);
+  return { country, distractors };
+}
+
+function buildMostPopulousCountryQuestion() {
+  const countries = getFilteredCountries();
+  const eligibleCorrect = countries.filter((country) => {
+    const lowerPopulationCount = countries.filter((candidate) => candidate.population_millions < country.population_millions).length;
+    return lowerPopulationCount >= 3;
+  });
+
+  if (eligibleCorrect.length) {
+    const country = eligibleCorrect[Math.floor(Math.random() * eligibleCorrect.length)];
+    const distractors = shuffle(countries.filter((candidate) => candidate.population_millions < country.population_millions)).slice(0, 3);
+    return { country, distractors };
+  }
+
+  const sortedCountries = [...countries].sort((left, right) => right.population_millions - left.population_millions);
+  return {
+    country: sortedCountries[0],
+    distractors: sortedCountries.slice(1, 4)
   };
 }
 
@@ -4641,6 +4688,8 @@ function buildPrompt(country, mode) {
       return `What is the most populous city in ${country.name}?`;
     case "country_population":
       return `What is the population of ${country.name}?`;
+    case "most_populous_country":
+      return "Which of these countries has the highest population?";
     case "shape_country":
       return "Which country matches this silhouette?";
     default:
@@ -4655,6 +4704,9 @@ function buildVisual(country, mode) {
   if (mode === "shape_country") {
     return { type: "shape", value: country.shape_data };
   }
+  if (mode === "most_populous_country") {
+    return { type: "text", value: "Compare the countries below" };
+  }
   if (mode === "country_population") {
     return { type: "text", value: country.name };
   }
@@ -4662,11 +4714,11 @@ function buildVisual(country, mode) {
 }
 
 function buildChoices(country, distractorCountries, mode) {
-  const factKey = FACT_TYPES[mode].answerKey;
   const allCountries = [country, ...distractorCountries];
   const uniqueChoices = allCountries.map((item) => ({
     value: String(factValueForMode(item, mode)),
-    label: formatChoiceLabel(item, mode)
+    label: formatChoiceLabel(item, mode),
+    className: mode === "country_flag" ? "flag-choice" : ""
   }));
 
   // TODO: Replace this simple duplicate cleanup with smarter distractor generation for large datasets.
@@ -4684,7 +4736,7 @@ function buildChoices(country, distractorCountries, mode) {
     const value = String(factValueForMode(fallback, mode));
     if (!seen.has(value)) {
       seen.add(value);
-      deduped.push({ value, label: formatChoiceLabel(fallback, mode) });
+      deduped.push({ value, label: formatChoiceLabel(fallback, mode), className: mode === "country_flag" ? "flag-choice" : "" });
     }
   }
 
@@ -4696,7 +4748,7 @@ function formatChoiceLabel(country, mode) {
     return country.flag;
   }
   if (mode === "country_population") {
-    return `${country.population_millions.toFixed(1)} million`;
+    return formatPopulationMillions(country.population_millions);
   }
   return String(factValueForMode(country, mode));
 }
@@ -4713,6 +4765,8 @@ function factValueForMode(country, mode) {
       return country.largest_city;
     case "country_population":
       return country.population_millions.toFixed(1);
+    case "most_populous_country":
+      return country.name;
     case "shape_country":
       return country.name;
     default:
@@ -4768,11 +4822,27 @@ function showFeedback(question, isCorrect, inputValue, skipped) {
     : `The correct answer was ${question.correctAnswer}.`;
 
   const country = question.country;
-  elements["answer-recap"].innerHTML = `
-    <strong>${country.flag} ${country.name}</strong><br>
-    Capital: ${country.capital} · Largest city: ${country.largest_city} · Population: ${country.population_millions.toFixed(1)} million
-    ${inputValue && !isCorrect && !skipped ? `<br>Your answer: ${escapeHtml(String(inputValue))}` : ""}
-  `;
+  if (question.mode === "most_populous_country") {
+    const rankedCountries = [...(question.optionCountries || [country])].sort(
+      (left, right) => right.population_millions - left.population_millions
+    );
+    elements["answer-recap"].innerHTML = `
+      <strong>Population ranking</strong><br>
+      ${rankedCountries
+        .map(
+          (optionCountry, index) =>
+            `${index + 1}. ${optionCountry.flag} ${escapeHtml(optionCountry.name)}: ${formatPopulationMillions(optionCountry.population_millions)}`
+        )
+        .join("<br>")}
+      ${inputValue && !isCorrect && !skipped ? `<br><br>Your answer: ${escapeHtml(String(inputValue))}` : ""}
+    `;
+  } else {
+    elements["answer-recap"].innerHTML = `
+      <strong>${country.flag} ${country.name}</strong><br>
+      Capital: ${country.capital} · Largest city: ${country.largest_city} · Population: ${formatPopulationMillions(country.population_millions)}
+      ${inputValue && !isCorrect && !skipped ? `<br>Your answer: ${escapeHtml(String(inputValue))}` : ""}
+    `;
+  }
 
   if (appState.settings.answerMode === "multiple") {
     [...elements["answer-choices"].querySelectorAll(".choice-button")].forEach((button) => {
@@ -4797,6 +4867,7 @@ function buildPositiveFeedback(mode) {
     flag_country: "Flag mastery rising.",
     country_largest_city: "City knowledge sharpened.",
     country_population: "Population estimate nailed.",
+    most_populous_country: "Population ranking instincts sharpened.",
     shape_country: "Silhouette memory strengthened."
   };
   return messages[mode] || "Nice work.";
@@ -4867,9 +4938,7 @@ function renderStats() {
 
   fillMetricList(elements["fact-accuracy-list"], analytics.factTypeAccuracy);
   fillMetricList(elements["mastery-distribution"], analytics.masteryDistribution);
-  fillMetricList(elements["country-mastery-list"], analytics.countryMastery);
-  fillMetricList(elements["weakest-items"], analytics.weakestItems);
-  fillMetricList(elements["strongest-items"], analytics.strongestItems);
+  fillMetricList(elements["continent-mastery-list"], analytics.continentMastery);
   renderDailyChart(analytics.dailyPractice);
 }
 
@@ -4956,25 +5025,19 @@ function computeAnalytics() {
     };
   });
 
-  const countryMastery = appState.countries.map((country) => {
-    const mastery = getCountryMastery(country.id);
-    return {
-      title: `${country.flag} ${country.name}`,
-      subtitle: country.region,
-      value: formatPercent(mastery),
-      progress: mastery
-    };
-  }).sort((a, b) => b.progress - a.progress);
-
-  const weakestItems = factEntries
-    .map(([id, stats]) => formatFactMetric(id, stats))
-    .sort((a, b) => a.progress - b.progress)
-    .slice(0, 10);
-
-  const strongestItems = factEntries
-    .map(([id, stats]) => formatFactMetric(id, stats))
-    .sort((a, b) => b.progress - a.progress)
-    .slice(0, 10);
+  const continentMastery = [...new Set(appState.countries.map((country) => country.region))]
+    .map((region) => {
+      const countriesInRegion = appState.countries.filter((country) => country.region === region);
+      const mastery =
+        countriesInRegion.reduce((sum, country) => sum + getCountryMastery(country.id), 0) / Math.max(1, countriesInRegion.length);
+      return {
+        title: region,
+        subtitle: `${countriesInRegion.length} countr${countriesInRegion.length === 1 ? "y" : "ies"}`,
+        value: formatPercent(mastery),
+        progress: mastery
+      };
+    })
+    .sort((a, b) => b.progress - a.progress);
 
   const weakestCountries = appState.countries
     .map((country) => ({
@@ -5031,9 +5094,7 @@ function computeAnalytics() {
     overallAccuracy,
     averageMastery,
     factTypeAccuracy,
-    countryMastery,
-    weakestItems,
-    strongestItems,
+    continentMastery,
     weakestCountries,
     weakestFactTypes,
     masteryDistribution,
@@ -5052,6 +5113,13 @@ function formatFactMetric(id, stats) {
     value: formatPercent(stats.mastery),
     progress: stats.mastery
   };
+}
+
+function formatPopulationMillions(value) {
+  if (value < 0.05) {
+    return "<0.1M";
+  }
+  return `${value.toFixed(1)}M`;
 }
 
 function buildDailyPracticeSeries() {
@@ -5396,6 +5464,10 @@ function evaluateAnswer(question, inputValue) {
       return isExactMatch(question.mode, inputValue, question.country.population_millions.toFixed(1));
     }
     return isPopulationAnswerCorrect(inputValue, question.country.population_millions);
+  }
+
+  if (question.mode === "most_populous_country") {
+    return isExactMatch(question.mode, inputValue, question.country.name);
   }
 
   if (isExactMatch(question.mode, inputValue, question.correctAnswer)) {

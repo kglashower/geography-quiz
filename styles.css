@@ -513,6 +513,20 @@ body.dark .shape-placeholder img {
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
+.choice-button.flag-choice {
+  display: grid;
+  place-items: center;
+  min-height: 132px;
+  text-align: center;
+  padding: 20px 16px;
+}
+
+.choice-button.flag-choice strong {
+  font-size: clamp(3.2rem, 7vw, 4.4rem);
+  line-height: 1;
+  font-weight: 500;
+}
+
 .choice-button.correct {
   background: rgba(24, 135, 95, 0.12);
   border-color: rgba(24, 135, 95, 0.4);
